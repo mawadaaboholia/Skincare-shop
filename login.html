@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care | shop</title>
+    <link rel="icon" href="img2pro/skincare (1).png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+  
+
+</head>
+<body>
+
+    <div class="login-card">
+        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=400" alt="Skin Care" class="brand-img">
+        
+        <h1>أهلاً بجمالكِ</h1>
+        <p class="welcome-text">أشرقي من جديد.. سجلي دخولكِ للعناية ببشرتك</p>
+        
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="user" placeholder=" " required>
+                <label for="user">اسم المستخدم</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="pass" placeholder=" " required>
+                <label for="pass">كلمة المرور</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">البريد الإلكتروني</label>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" id="phone" placeholder=" " required>
+                <label for="phone">رقم الهاتف</label>
+            </div>
+            
+            <button type="submit" class="login-btn">ابدئي الرحلة الآن</button>
+            
+        </form>
+    </div>
+
+    <div id="customAlert" class="modal">
+        <div class="modal-content">
+            <div class="alert-icon">🌸</div>
+            <h2>تمت الإضافة لجمالكِ</h2>
+            <p id="alertMsg"></p>
+            <button onclick="closeAlert()" class="close-btn">موافق</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

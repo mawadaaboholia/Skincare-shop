@@ -1,0 +1,217 @@
+/* استيراد الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 80px; 
+    font-family: 'Cairo', sans-serif;
+    background-color: #fff; /* خلفية الصفحة الأساسية */
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #822146; 
+    width: 100%;
+    height: 80px;
+    direction: rtl;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back-btn {
+    background-color: #E49BA6;
+    color: #581616;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Best Sellers Section - يمتد اللون لعرض الشاشة بالكامل */
+.best-sellers {
+      width: 100%;
+    background-color: #fdf2f2; 
+    padding: 60px 0;
+    text-align: center;
+    /* --- إضافة الظل هنا --- */
+    position: relative; /* لضمان ظهور الظل فوق السكشن الذي يليه */
+    z-index: 10;       /* يرفع السكشن قليلاً ليتداخل الظل مع ما تحته */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); 
+    /* التفسير: 0 (أفقياً) ، 15px (لأسفل) ، 25px (درجة التمويه) */
+}
+
+.best-sellers h2 {
+    color: #581616;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.best-sellers p {
+     display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #822146;
+    margin: 10px 0 20px 0;
+}
+/* حاوية المحتوى داخل السكشن للحفاظ على التوازن */
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Main Products Section - سكشن المجموعة المختارة */
+.container {
+    width: 100%; /* جعل الحاوية تأخذ العرض كاملاً */
+    max-width: 100% !important; 
+    margin: 0;
+    padding: 60px 0;
+     background:linear-gradient(#FCF8F8, #FBEFEF ,#F9DFDF ,#F5AFAF ); /* لون مختلف عن السكشن السابق */
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #581616;
+}
+
+.mp {
+    color: #822146;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Grid للمنتجات */
+.products-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* تصميم الكروت الموحد */
+.product-card, .card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.4s ease;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.product-card:hover, .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(130, 33, 70, 0.1);
+}
+
+.product-card img, .product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #822146;
+    margin: 10px 0 20px 0;
+}
+
+/* أزرار الإضافة للسلة */
+.add-btn {
+    background-color: #822146;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #E49BA6;
+    color: #581616;
+}
+
+/* Footer */
+.footer-black-bar {
+    background-color: #f9f7f7;
+    color: #822146;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.policy-links a, .social-icons a {
+    color: #822146;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.policy-links a:hover, .social-icons a:hover {
+    color: #E49BA6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bar-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .hero h1 { font-size: 1.8rem; }
+}
