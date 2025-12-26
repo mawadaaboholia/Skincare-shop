@@ -1,0 +1,214 @@
+/* Navbar */
+.navbar {
+    background-color: #822146; 
+    width: 100%;
+    height: 80px;
+    direction: rtl;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.back-btn {
+    background-color: #E49BA6;
+    color: #581616;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    padding-top: 100px; /* هذا يمنع المحتوى من الاختفاء تحت الناف بار */
+  background: linear-gradient(to bottom, #FCF8F8 0%, #FBEFEF, #F9DFDF, #F5AFAF 100%);
+    color: #333;
+    padding-bottom: 0px; /* تم تعديلها لتشمل الأسفل أيضاً */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 2. تحسين تصميم الهيدر (العنوان الرئيسي) */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+header h1 {
+ color: #822146; /* تغيير اللون ليتناسب مع هوية الموقع */
+    margin-bottom: 10px;
+}
+
+/* تصميم البطاقة */
+.product-card {
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* الجزء الخاص بالنصوص */
+.product-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.badge {
+    background: #fde4f3;
+    color: #b82814;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.badge.yellow { background: #fef9e7; color: #f1c40f; }
+.badge.green { background: #eafaf1; color: #2ecc71; }
+.badge.pink { background: #FFE4EF; color: #d94e75; } /* 🌟 اللون الجديد 🌟 */
+
+.product-content h2 {
+    font-size: 28px;
+    margin-top: 15px;
+    color: #822146;}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.product-content h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    color: #444;
+}
+
+.product-content ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.product-content ul li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-right: -1em;
+}
+
+.product-content ul li {
+    padding-right: 20px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.usage {
+    background: #fdfdfd;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+/* الجزء الخاص بالصورة */
+.product-image {
+    flex: 0.8;
+    background-color: #fafafa;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* استجابة الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column-reverse;
+    }
+    .product-image {
+        height: 250px;
+    }
+}
+
+
+
+/* Footer */
+.footer-black-bar {
+    background-color: #f9f7f7;
+    color: #822146;
+    padding: 30px 0;
+    width: 100%;
+    
+}
+
+.bar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.policy-links a, .social-icons a {
+    color: #822146;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.policy-links a:hover, .social-icons a:hover {
+    color: #E49BA6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bar-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .hero h1 { font-size: 1.8rem; }
+}
